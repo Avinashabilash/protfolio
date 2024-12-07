@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome cdn for font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">AVINASH</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <!-- Link to open resume in a new tab -->
+                        <li><a href="resume.docx" target="_blank">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailto:avinashabilash614@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/avinash.jpg" alt="Avinash.G's Profile Picture">
+                </div>                
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">AI & ML Engineer</span></h5>
+                    <h1>Avinash.G</h1>
+                    <p>B.Tech CSE graduate specializing in AI and ML with a passion for innovation and problem-solving.</p>
+
+                    <div class="btn-group">
+                       <!-- Button to download CV -->
+                       <a href="resume.docx" target="_blank" class="btn active">Download CV</a>
+                       <a href="mailto:avinashabilash614@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/avinashg" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:avinashabilash614@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!-- Typed.js for typing text effect -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** Creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["AI & ML Engineer", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+     </script>
+</body>
+</html>
