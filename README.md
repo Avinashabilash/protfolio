@@ -31,6 +31,9 @@ JavaScript: For interactive functionality using Typed.js.
 Font Awesome: For icons in the navigation menu and social links.
 Screenshot
 
+![image](https://github.com/user-attachments/assets/d41f6ba8-3ba6-4d33-8f76-b999ee73eff3)
+
+
 To-Do
 Add project showcase section.
 Enhance blog section with dynamic content.
